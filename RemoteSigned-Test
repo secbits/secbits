@@ -1,0 +1,10 @@
+<#
+.SYNOPSIS
+  Test if RemoteSigned policy blocks execution of an unsigned, "remote" script.
+
+.DESCRIPTION
+  Attempts to execute a local unsigned script. Expected to run under RemoteSigned unless marked as remote.
+#>
+
+Write-Host "Running RemoteSigned Policy Test..." -ForegroundColor Cyan
+Write-Host "✅ If you see this message, RemoteSigned is allowing this script to run."
